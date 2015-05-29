@@ -1,0 +1,34 @@
+body {
+  font: 14px "Helvetica-Neue", Helvetica, Arial, sans-serif;
+}
+
+.btn btn-alert a{
+  color: red;
+}
+
+.navbar-brand {
+  color: peru;
+  align: center;
+}
+
+h1 {
+  text-align: center;
+  color: peru;
+}
+
+h3 {
+  text-align: left;
+  color: peru;
+}
+
+.current-applicants {
+  color: peru;
+}
+
+#navbar{
+  background-color: peru;
+  font: white;
+}
+h6 {
+  color: grey;
+}

@@ -1,0 +1,26 @@
+
+extends layout
+
+block content
+	.container
+		h1 Applicant:
+		ul#applications.list-unstyled
+			for user in userObject
+				h3= user.name
+				h6: em Years of Experience: #{user.years}
+				h4: strong About #{user.name}
+				p= user.bio
+				h4 Skills:
+				p
+					ul
+						for skill in user.skills
+							li= skill
+				h4 Why #{user.name} wants to work here:
+				p= user.why
+				
+				
+				iframe(src='/ViewerJS/#../#{user.documentPath}' width='400' height='300' allowfullscreen='' webkitallowfullscreen='')
+				p
+				a(href='/delete/#{user._id}' class='btn btn-danger') Delete this Applicant
+				p
+				a(href='/applicants' class='btn btn-success') Return to list of Applicants

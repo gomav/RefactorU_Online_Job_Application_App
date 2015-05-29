@@ -1,0 +1,15 @@
+
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css")
+    link(rel='stylesheet' href='/stylesheets/style.css')
+  body
+    .nav.navbar-nav.nav-right
+      .btn-group.btn-group-justified
+        a(href='/' class='btn btn-default' id="navbar") Home
+        a(href='/applicants' class='btn btn-default' id="navbar") Applicants
+    block content
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+    script(src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js")
